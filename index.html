@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poonam Mishra - Python & Software Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Poonam Mishra, a final-year B.Tech student and aspiring Software Developer specializing in Python, Django, and full-stack web development.">
+    
+    <!-- Open Graph Metadata for Social Sharing -->
+    <meta property="og:title" content="Poonam Mishra - Software Developer Portfolio">
+    <meta property="og:description" content="Portfolio of Poonam Mishra, showcasing projects in Python, Django, and Web Development.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons (Lightweight icon library) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container" style="justify-content: flex-start; gap: 4rem;">
+            <a href="#home" class="logo logo-box">K</a>
+            <nav class="nav-links" style="margin-right: auto; gap: 2.5rem;">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact Me</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#projects" class="btn btn-primary" style="background: var(--accent-cyan); color: #000; font-weight: 600; border-radius: 30px;">Case Studies</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-links">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section (Avatar) -->
+        <section id="home" class="hero-avatar section">
+            <div class="container hero-avatar-container">
+                <div class="hero-text-col">
+                    <p class="greeting-avatar">HI THERE 👋 I'M</p>
+                    <h1 class="name-avatar">Poonam<br>Mishra</h1>
+                    <p class="role-avatar">SOFTWARE DEVELOPER + ENGINEER 👩‍💻</p>
+                    <p class="desc-avatar">I'm a passionate developer with a strong foundation in IT, specializing in Python and web development.</p>
+                    <a href="#contact" class="btn btn-primary" style="background: var(--accent-cyan); color: #000; font-weight: 600; padding: 0.8rem 2.5rem; border-radius: 30px; margin-top: 1rem;">Hire Me</a>
+                </div>
+                <div class="hero-image-col">
+                    <img src="images/avatar.png" alt="3D Avatar" onerror="this.style.display='none'" class="avatar-img">
+                </div>
+            </div>
+            
+            <!-- Decorative circle -->
+            <div class="hero-decor-circle"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Hello! I'm Poonam Mishra, a final-year <strong>B.Tech Information Technology</strong> student with a foundational background holding a <strong>Diploma in Information Technology</strong>.</p>
+                        <p>I am an aspiring developer passionate about building reliable software and web applications. My core programming skills include <strong>Python</strong>, <strong>Java</strong>, and <strong>JavaScript</strong>. I have hands-on experience developing web applications using <strong>Django</strong>, <strong>HTML5</strong>, and <strong>CSS3</strong>, alongside a good understanding of <strong>SQL fundamentals</strong>.</p>
+                        <p>Throughout my academic journey, I have also developed a strong grasp of core computer science concepts, including <strong>Networking</strong>, <strong>Debugging and Testing</strong>, and the <strong>Software Development Lifecycle (SDLC)</strong>. As a fresher, I am eager to learn, adapt, and bring my problem-solving skills to a professional team.</p>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="resume/Poonam-Mishra-Resume.pdf" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.95rem;" target="_blank" rel="noopener noreferrer" aria-label="Download Resume (PDF)" download>
+                                <i class="ph ph-file-pdf" style="margin-right: 0.5rem; font-size: 1.1rem;"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <div class="image-placeholder">
+                                <i class="ph ph-terminal-window"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (Services) -->
+        <section id="skills" class="services-section section">
+            <div class="container">
+                <div class="section-header-persona">
+                    <div class="section-title-wrapper">
+                        <span class="section-number">01.</span>
+                        <h2 class="section-title-persona">Services</h2>
+                        <span class="watermark">Services</span>
+                    </div>
+                    <a href="#projects" class="btn-outline-persona">VIEW ALL SERVICES</a>
+                </div>
+                
+                <div class="services-grid-persona">
+                    <!-- Programming Languages -->
+                    <div class="service-card-persona primary">
+                        <div class="service-icon"><i class="ph ph-code"></i></div>
+                        <h3>Programming Languages</h3>
+                        <p>Python, Java, JavaScript. Proficient in writing clean and efficient code for robust applications.</p>
+                    </div>
+                    <!-- Web Development -->
+                    <div class="service-card-persona secondary">
+                        <div class="service-icon"><i class="ph ph-browsers"></i></div>
+                        <h3>Web Development</h3>
+                        <p>HTML5, CSS3, Django. Creating dynamic and user-friendly responsive web interfaces.</p>
+                    </div>
+                    <!-- Database -->
+                    <div class="service-card-persona secondary">
+                        <div class="service-icon"><i class="ph ph-database"></i></div>
+                        <h3>Database Management</h3>
+                        <p>SQL fundamentals, Database Design. Structuring and managing application data efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1: Smart Campus ERP -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="ph ph-graduation-cap"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Campus ERP</h3>
+                            <p style="font-size: 0.85rem; color: var(--accent-blue); margin-bottom: 0.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Web Application, Database Design</p>
+                            <p>Built a full-stack ERP-style application to help manage everyday campus activities and records. Designed the database schema and connected it to a web front end so data could be handled smoothly.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn btn-outline open-modal-btn" data-modal="modal-project-1" aria-label="View Details for Smart Campus ERP">View Details &rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2: Online Sports Registration System -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="ph ph-basketball"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Online Sports Registration System</h3>
+                            <p style="font-size: 0.85rem; color: var(--accent-blue); margin-bottom: 0.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Web Application, Form Handling</p>
+                            <p>Built an easy-to-use online portal where students could register for sports events. Set up the data storage so organizers could manage participants without extra hassle.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn btn-outline open-modal-btn" data-modal="modal-project-2" aria-label="View Details for Online Sports Registration System">View Details &rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section id="experience" class="timeline-section section">
+            <div class="container">
+                <div class="timeline-grid">
+                    <!-- Experience -->
+                    <div class="timeline-column">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Sep 2022 – Oct 2022</span>
+                                    <h3>Web Development Intern</h3>
+                                    <h4>Patel Web Solutions</h4>
+                                    <ul style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; padding-left: 1.2rem;">
+                                        <li>Worked on responsive web pages using HTML, CSS, and JavaScript for real client projects.</li>
+                                        <li>Worked alongside the development team in a real development workflow.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">45-Day Program</span>
+                                    <h3>Software Development Intern</h3>
+                                    <h4>VP ITLab</h4>
+                                    <ul style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem; padding-left: 1.2rem;">
+                                        <li>Assisted with software and web development tasks.</li>
+                                        <li>Worked on debugging and testing.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education -->
+                    <div class="timeline-column">
+                        <h2 class="section-title">Education</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2024 – 2027</span>
+                                    <h3>B.Tech in Information Technology</h3>
+                                    <h4>Final Year</h4>
+                                    <p>In Progress</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2021 – 2024</span>
+                                    <h3>Diploma in Information Technology</h3>
+                                    <h4>Government Polytechnic, Gandhinagar</h4>
+                                    <p>CGPA: 6.98 / 10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container contact-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-desc">I'm currently looking for new opportunities. Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="btn btn-primary">Say Hello</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="#" aria-label="GitHub" target="_blank"><i class="ph ph-github-logo"></i></a>
+                <a href="https://www.linkedin.com/in/poonam-mishra-970374284/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="#" aria-label="Twitter" target="_blank"><i class="ph ph-twitter-logo"></i></a>
+            </div>
+            <p>&copy; <span id="year">2026</span> Poonam Mishra. Designed & Built with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Project 1 Modal -->
+    <div id="modal-project-1" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal-close" aria-label="Close Modal"><i class="ph ph-x"></i></button>
+            <div class="modal-body">
+                <h2 id="modal-1-title" class="modal-title">Smart Campus ERP</h2>
+                <div class="modal-category">Web Application / ERP</div>
+                
+                <h3 class="modal-heading">Overview</h3>
+                <p>Smart Campus ERP is a web-based ERP-style application designed to manage and organize everyday campus activities and records through a centralized system.</p>
+                
+                <h3 class="modal-heading">Objective</h3>
+                <p>The objective of the project is to provide a centralized web application for managing campus-related information and activities efficiently.</p>
+                
+                <h3 class="modal-heading">Key Features</h3>
+                <ul class="modal-list">
+                    <li>Centralized campus information management</li>
+                    <li>Structured record management</li>
+                    <li>Web-based user interface</li>
+                    <li>Database-driven application</li>
+                    <li>Organized campus data</li>
+                    <li>Efficient management of everyday campus activities</li>
+                </ul>
+                
+                <h3 class="modal-heading">Technologies Used</h3>
+                <p>Python, Django, HTML, CSS, SQL</p>
+                
+                <h3 class="modal-heading">My Role</h3>
+                <p>Worked on the development of the web application and implemented the application structure, frontend interface and database-related functionality using the technologies used in the project.</p>
+                
+                <h3 class="modal-heading">Project Outcome</h3>
+                <p>Created a functional ERP-style web application for managing campus activities and records in a structured way.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div id="modal-project-2" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+            <button class="modal-close" aria-label="Close Modal"><i class="ph ph-x"></i></button>
+            <div class="modal-body">
+                <h2 id="modal-2-title" class="modal-title">Online Sports Registration System</h2>
+                <div class="modal-category">Web Application / Registration System</div>
+                
+                <h3 class="modal-heading">Overview</h3>
+                <p>The Online Sports Registration System is a web-based portal that allows students to register for sports events online and helps organizers manage participant information.</p>
+                
+                <h3 class="modal-heading">Objective</h3>
+                <p>The objective is to simplify the sports registration process by replacing manual registration with an online system.</p>
+                
+                <h3 class="modal-heading">Key Features</h3>
+                <ul class="modal-list">
+                    <li>Online student registration</li>
+                    <li>Sports event registration</li>
+                    <li>Participant information management</li>
+                    <li>Form validation</li>
+                    <li>Database storage</li>
+                    <li>Easy-to-use interface</li>
+                    <li>Organized participant records</li>
+                </ul>
+                
+                <h3 class="modal-heading">Technologies Used</h3>
+                <p>HTML, CSS, JavaScript, PHP, MySQL</p>
+                
+                <h3 class="modal-heading">My Role</h3>
+                <p>Worked on the development of the web application, including the frontend interface, registration form functionality and database-related implementation.</p>
+                
+                <h3 class="modal-heading">Project Outcome</h3>
+                <p>Created an easy-to-use online registration system that helps students register for sports events and allows organizers to manage participant information.</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="ph ph-caret-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
