@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://poonam-147.github.io/poonam-mishra-portfolio/sitemap.xml
