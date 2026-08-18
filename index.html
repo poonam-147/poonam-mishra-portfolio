@@ -59,21 +59,21 @@
     <!-- Phosphor Icons (Lightweight icon library) -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
     <!-- Navbar -->
     <header class="navbar">
-        <div class="container nav-container">
-            <a href="#home" class="logo logo-box">P</a>
-            <nav class="nav-links">
+        <div class="container nav-container" style="justify-content: space-between; align-items: center;">
+            <a href="#home" class="logo logo-box" style="font-weight: 600; font-family: var(--font-main);">P</a>
+            <nav class="nav-links" style="gap: 2.5rem; align-items: center; justify-content: center; flex: 1;">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Services</a>
                 <a href="#projects" class="nav-link">Portfolio</a>
                 <a href="#contact" class="nav-link">Contact Me</a>
             </nav>
-            <div class="nav-actions">
+            <div class="nav-actions" style="display: flex; align-items: center;">
                 <button class="mobile-menu-btn" aria-label="Toggle menu">
                     <i class="ph ph-list"></i>
                 </button>
@@ -193,8 +193,9 @@
                                 <span>Django</span>
                                 <span>SQL</span>
                             </div>
-                            <div class="project-links">
-                                <button class="btn btn-outline open-modal-btn" data-modal="modal-project-1" aria-label="View Details for Smart Campus ERP">View Details &rarr;</button>
+                            <div class="project-links" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <button class="btn btn-outline open-modal-btn" data-modal="modal-project-1" aria-label="View Details for Smart Campus ERP">Overview</button>
+                                <a href="https://github.com/poonam-147" target="_blank" class="btn btn-outline" aria-label="View Smart Campus ERP on GitHub" style="display: inline-flex; align-items: center; gap: 0.5rem;"><i class="ph ph-github-logo" style="font-size: 1.2rem;"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -212,8 +213,9 @@
                                 <span>CSS3</span>
                                 <span>JavaScript</span>
                             </div>
-                            <div class="project-links">
-                                <button class="btn btn-outline open-modal-btn" data-modal="modal-project-2" aria-label="View Details for Online Sports Registration System">View Details &rarr;</button>
+                            <div class="project-links" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <button class="btn btn-outline open-modal-btn" data-modal="modal-project-2" aria-label="View Details for Online Sports Registration System">Overview</button>
+                                <a href="https://github.com/poonam-147" target="_blank" class="btn btn-outline" aria-label="View Online Sports Registration System on GitHub" style="display: inline-flex; align-items: center; gap: 0.5rem;"><i class="ph ph-github-logo" style="font-size: 1.2rem;"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
