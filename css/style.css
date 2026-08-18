@@ -999,6 +999,10 @@ body.modal-open {
         padding: 4rem 0;
     }
     
+    .modal-body {
+        padding: 1.5rem;
+    }
+    
     .back-to-top {
         bottom: 1rem;
         right: 1rem;
