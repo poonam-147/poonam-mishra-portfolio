@@ -834,6 +834,47 @@ body {
     font-size: 1.1rem;
 }
 
+.contact-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.contact-pill i {
+    font-size: 1.5rem;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-pill .contact-text {
+    max-width: 0;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-10px);
+}
+
+.contact-pill:hover {
+    width: auto;
+    padding-right: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 255, 170, 0.2);
+}
+
+.contact-pill:hover .contact-text {
+    max-width: 300px;
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* --- Footer --- */
 footer {
     padding: 2rem 0;
