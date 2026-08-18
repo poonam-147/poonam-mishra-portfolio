@@ -218,3 +218,21 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', targetTheme);
     });
 });
+
+// Contact Form Handler
+function handleContactForm(event) {
+    event.preventDefault();
+    const btn = event.target.querySelector('.contact-submit-btn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = 'Message Sent! <i class="ph ph-check-circle"></i>';
+    btn.style.background = '#00FFAA';
+    btn.style.color = '#000';
+    btn.disabled = true;
+    setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        btn.style.color = '';
+        btn.disabled = false;
+        event.target.reset();
+    }, 3000);
+}
