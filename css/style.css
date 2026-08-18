@@ -12,10 +12,28 @@
     --accent-purple: #00FFAA;
     --gradient-accent: linear-gradient(135deg, #00FFAA, #00D488);
     
+    --border-color: rgba(255, 255, 255, 0.1);
+    --border-light: rgba(255, 255, 255, 0.05);
+    --glass-bg: rgba(10, 15, 28, 0.7);
+    --glass-shadow: rgba(0, 0, 0, 0.5);
+    
     --font-main: 'Inter', sans-serif;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
     --nav-height: 90px;
+}
+
+[data-theme="light"] {
+    --bg-main: #F3F4F6;
+    --bg-surface: #FFFFFF;
+    --bg-surface-hover: #E5E7EB;
+    --text-primary: #111827;
+    --text-secondary: #4B5563;
+    
+    --border-color: rgba(0, 0, 0, 0.1);
+    --border-light: rgba(0, 0, 0, 0.05);
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-shadow: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -39,7 +57,7 @@ body {
 
 ::selection {
     background-color: var(--accent-purple);
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .container {
@@ -92,7 +110,7 @@ body {
 
 .btn-primary {
     background: var(--gradient-accent);
-    color: #fff;
+    color: var(--text-primary);
     border: none;
     box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
 }
@@ -118,18 +136,18 @@ body {
     top: 0;
     width: 100%;
     height: var(--nav-height);
-    background: rgba(10, 15, 28, 0.7);
+    background: var(--glass-bg);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border-light);
     display: flex;
     align-items: center;
     transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
 }
 
 .navbar.scrolled {
-    background: rgba(10, 15, 28, 0.95);
+    background: var(--glass-bg);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     border-bottom-color: transparent;
 }
@@ -146,7 +164,7 @@ body {
     font-weight: 300;
     font-family: serif;
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--text-primary);
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -170,7 +188,7 @@ body {
 }
 
 .nav-link {
-    color: #FFFFFF;
+    color: var(--text-primary);
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
@@ -261,7 +279,7 @@ body {
 }
 
 .greeting-avatar {
-    color: #FFFFFF;
+    color: var(--text-primary);
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -275,7 +293,7 @@ body {
     font-size: clamp(3.5rem, 6vw, 5rem);
     font-weight: 800;
     line-height: 1.1;
-    color: #FFFFFF;
+    color: var(--text-primary);
     margin-bottom: 1.5rem;
 }
 
@@ -370,7 +388,7 @@ body {
     color: #374151;
     position: relative;
     z-index: 2;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid var(--border-light);
 }
 
 .about-image-wrapper::after {
@@ -416,7 +434,7 @@ body {
 .section-title-persona {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
-    color: #FFFFFF;
+    color: var(--text-primary);
     position: relative;
     z-index: 2;
     margin: 0;
@@ -430,7 +448,7 @@ body {
     font-size: clamp(4rem, 8vw, 6rem);
     font-weight: 900;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
+    -webkit-text-stroke: 1px var(--border-light);
     z-index: 1;
     white-space: nowrap;
     pointer-events: none;
@@ -443,8 +461,8 @@ body {
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #FFFFFF;
-    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    background: var(--border-light);
     border: none;
     border-radius: 4px;
     text-decoration: none;
@@ -472,7 +490,7 @@ body {
     min-height: 330px;
     padding: 34px;
     background: var(--bg-surface);
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid var(--border-light);
     border-radius: 16px;
     transition: transform 0.3s ease,
                 border-color 0.3s ease,
@@ -568,7 +586,7 @@ body {
     background: var(--bg-surface);
     border-radius: 1rem;
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid var(--border-light);
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
                 border-color 0.4s ease, 
                 box-shadow 0.4s ease;
@@ -769,7 +787,7 @@ body {
     background: var(--bg-surface);
     padding: 1.5rem;
     border-radius: 0.5rem;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid var(--border-light);
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -820,7 +838,7 @@ body {
 footer {
     padding: 2rem 0;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid var(--border-light);
 }
 
 .social-links {
@@ -855,7 +873,7 @@ footer p {
     height: 3rem;
     background: var(--bg-surface);
     color: var(--accent-blue);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -889,7 +907,7 @@ footer p {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(10, 15, 28, 0.85);
+    background: var(--glass-bg);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     z-index: 2000;
@@ -914,7 +932,7 @@ footer p {
     max-height: 90vh;
     overflow-y: auto;
     border-radius: 1rem;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid var(--border-color);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     position: relative;
     transform: translateY(20px) scale(0.95);
@@ -929,8 +947,8 @@ footer p {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--border-light);
+    border: 1px solid var(--border-color);
     color: var(--text-primary);
     width: 2.5rem;
     height: 2.5rem;
@@ -974,7 +992,7 @@ footer p {
     font-size: 1.2rem;
     color: var(--text-primary);
     margin: 1.5rem 0 0.75rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid var(--border-light);
     padding-bottom: 0.5rem;
 }
 
