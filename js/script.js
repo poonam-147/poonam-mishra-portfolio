@@ -220,19 +220,47 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Contact Form Handler
-function handleContactForm(event) {
+async function handleContactForm(event) {
     event.preventDefault();
-    const btn = event.target.querySelector('.contact-submit-btn');
+    const form = event.target;
+    const btn = form.querySelector('.contact-submit-btn');
     const originalText = btn.innerHTML;
-    btn.innerHTML = 'Message Sent! <i class="ph ph-check-circle"></i>';
-    btn.style.background = '#00FFAA';
-    btn.style.color = '#000';
+
+    // Show loading state
+    btn.innerHTML = 'Sending... <i class="ph ph-circle-notch"></i>';
     btn.disabled = true;
-    setTimeout(() => {
-        btn.innerHTML = originalText;
-        btn.style.background = '';
-        btn.style.color = '';
-        btn.disabled = false;
-        event.target.reset();
-    }, 3000);
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            // Success!
+            btn.innerHTML = 'Message Sent! <i class="ph ph-check-circle"></i>';
+            btn.style.background = '#00FFAA';
+            btn.style.color = '#000';
+            form.reset();
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+                btn.style.color = '';
+                btn.disabled = false;
+            }, 4000);
+        } else {
+            throw new Error('Failed');
+        }
+    } catch (error) {
+        btn.innerHTML = 'Error — Try Again <i class="ph ph-warning"></i>';
+        btn.style.background = '#ff4444';
+        btn.style.color = '#fff';
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.style.background = '';
+            btn.style.color = '';
+            btn.disabled = false;
+        }, 3000);
+    }
 }

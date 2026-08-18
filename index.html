@@ -334,24 +334,24 @@
 
                 <!-- Right: Form -->
                 <div class="contact-form-col">
-                    <form class="contact-form" onsubmit="handleContactForm(event)">
+                    <form class="contact-form" id="contact-form" onsubmit="handleContactForm(event)" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                         <div class="contact-form-row">
                             <div class="contact-form-group">
                                 <label>NAME</label>
-                                <input type="text" placeholder="Your Name" required>
+                                <input type="text" name="name" placeholder="Your Name" required>
                             </div>
                             <div class="contact-form-group">
                                 <label>EMAIL</label>
-                                <input type="email" placeholder="Your Email" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
                             </div>
                         </div>
                         <div class="contact-form-group">
                             <label>PHONE NUMBER</label>
-                            <input type="tel" placeholder="Your WhatsApp / Phone Number">
+                            <input type="tel" name="phone" placeholder="Your WhatsApp / Phone Number">
                         </div>
                         <div class="contact-form-group">
                             <label>DROP A MESSAGE</label>
-                            <textarea placeholder="Type your message here..." rows="5" required></textarea>
+                            <textarea name="message" placeholder="Type your message here..." rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary contact-submit-btn">
                             SEND MESSAGE <i class="ph ph-paper-plane-tilt"></i>
