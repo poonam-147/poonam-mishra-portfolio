@@ -172,13 +172,7 @@ body {
     position: relative;
 }
 .logo.logo-box::before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    width: 25px;
-    height: 25px;
-    background-color: rgba(0, 255, 170, 0.2);
-    z-index: -1;
+    display: none;
 }
 
 .nav-links {
